@@ -1,0 +1,381 @@
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#container {
+  background: transparent;
+}
+
+
+#image-container {
+
+    background-color:white;
+    padding: 1px;
+    border-radius: 3000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+}
+
+#new-message-container {
+  background-color: white; /* Customize the background color */
+  padding: 20px;
+  border-radius: 100px;
+  margin-top: 300px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 8000px; /* Set a maximum width to ensure it doesn't get too wide */
+  margin: 30px auto; /* Center the container horizontally */
+}
+
+#new-message-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#new-message-container .message-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#new-message-container .signature {
+  font-weight: bold;
+  
+}
+
+#new-message-container img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  margin-top: 20px; /* Add space between text and image */
+}
+
+.styled-video-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.styled-video-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.styled-video-container .message-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Style the custom video container */
+.custom-video-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.custom-video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-video-container:hover video {
+  transform: scale(1.05);
+}
+h1 {
+  color: #ff6b6b;
+}
+
+.clue {
+  display: none;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Rest of your CSS remains the same */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#header img {
+  max-width: 10%; /* Adjust the percentage as needed */
+  max-height: 10%; /* Adjust the percentage as needed */
+  height: auto;
+}
+
+#header h1 {
+  color: #ff6b6b;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.flip-container {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flipper {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message-image {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin: 100px; /* Adjust the margin as needed for spacing between images */
+  border-radius: 3%; /* Makes the images circular */
+  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+h2 {
+  animation: 1s blink linear infinite;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.birthdayCard {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+  margin: 20px auto; /* Center the birthday card and add margin for spacing */
+  clear: both; /* Ensure that the card is below the images */
+}
+
+.cardFront {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: .6s;
+}
+
+.happy {
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+}
+
+.balloons {
+  position: absolute;
+}
+
+.heartOne,
+.heartTwo,
+.heartThree,
+.heartFour {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.heartOne::before,
+.heartTwo::before,
+.heartThree::before,
+.heartFour::before,
+.heartOne::after,
+.heartTwo::after,
+.heartThree::after,
+.heartFour::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 15px;
+  height: 30px;
+  background-color: #ff6b6b;
+  border-radius: 15px 15px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heartTwo,
+.heartThree {
+  transform: rotateY(180deg);
+}
+
+.cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-family: cursive;
+  margin: 15px 10px 10px 30px;
+  color: #333;
+}
+
+.name {
+  position: absolute;
+  left: 150px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.back {
+  font-family: Tahoma, sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 30px;
+  outline-color: #333;
+  outline-style: dashed;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+  visibility: hidden;
+}
+
+@keyframes blink {
+  0% {
+      color: white;
+  }
+
+  20% {
+      color: yellow;
+  }
+
+  40% {
+      color: greenyellow;
+  }
+
+  60% {
+      color: red;
+  }
+
+  80% {
+      color: hotpink;
+  }
+
+  100% {
+      color: blue;
+  }
+}
+
+footer {
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer a {
+  color: white;
+}
+
+.cat-image {
+  width: 2002px; /* Adjust the desired width */
+  height: 200px; /* Adjust the desired height */
+}
+
